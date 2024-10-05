@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía profesional y limpia */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Fondo suave */
+    color: #333; /* Texto en gris oscuro */
+}
+
+/* Contenedor general */
+.container {
+    width: 1200px; /* Ancho de 1200px */
+    margin: 0 auto; /* Centrando el contenedor */
+    padding: 20px; /* Espaciado alrededor del contenedor */
+}
+
+/* Estilos para la cabecera */
+.header {
+    background-color: #007bff; /* Color azul profesional */
+    color: white; /* Texto en blanco */
+    text-align: center; /* Centrar el contenido */
+    padding: 40px 0; /* Espaciado más amplio */
+    font-size: 2.5em; /* Título grande */
+    font-weight: 700; /* Negrita */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: #343a40; /* Fondo gris oscuro */
+    text-align: center; /* Centrar los elementos del menú */
+    padding: 15px 0; /* Espaciado */
+    margin-bottom: 40px; /* Espaciado inferior */
+}
+
+.menu ul {
+    list-style: none; /* Eliminar viñetas */
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block; /* Colocar los elementos del menú en línea */
+    margin-right: 30px; /* Separación entre elementos */
+}
+
+.menu ul li a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: white; /* Color del texto */
+    font-size: 1.2em; /* Tamaño de texto */
+    transition: color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+.menu ul li a:hover {
+    color: #17a2b8; /* Color azul claro al pasar el cursor */
+}
+
+/* Sección principal */
+.main-content {
+    width: 70%; /* Ocupa el 70% del ancho */
+    float: left; /* Alinear a la izquierda */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluir relleno en el ancho total */
+}
+
+.grid {
+    display: grid; /* Configurar cuadrícula */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 20px; /* Espaciado entre las cajas */
+}
+
+.box {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    padding: 30px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    font-size: 1.1em; /* Tamaño del texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto de hover en las cajas */
+.box:hover {
+    transform: translateY(-5px); /* Levantar la caja al pasar el cursor */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 30%; /* Ocupa el 30% */
+    float: right; /* Alinear a la derecha */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f1f1f1; /* Fondo gris claro */
+    border-left: 3px solid #007bff; /* Línea de borde a la izquierda */
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #007bff; /* Color azul para el título */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px; /* Separación entre elementos */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333; /* Texto gris oscuro */
+    font-weight: 500; /* Peso del texto */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.sidebar ul li a:hover {
+    color: #007bff; /* Cambiar a azul al pasar el cursor */
+}
+
+/* Pie de página */
+.footer {
+    clear: both; /* Asegurar que esté debajo de los elementos flotantes */
+    background-color: #343a40; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrar el contenido */
+    padding: 20px 0; /* Espaciado vertical */
+    font-size: 0.9em; /* Texto más pequeño */
+    margin-top: 40px; /* Espaciado superior */
+}
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    .container {
+        width: 100%; /* Ajustar el ancho al 100% en pantallas más pequeñas */
+        padding: 10px;
+    }
+
+    .main-content, .sidebar {
+        width: 100%; /* Alinear al 100% en dispositivos móviles */
+        float: none;
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}
